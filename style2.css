@@ -1,0 +1,27 @@
+*{
+    background-color: aqua;
+}
+h2{
+    text-align: center;
+    transition: ease-in-out;
+}
+h3{
+    text-align: center;
+}
+#para1{
+     text-align: center;
+}
+p input{
+    text-align: center;
+}
+button{
+    margin-left: 500px;
+    border-radius: 30px;
+}
+button:hover{
+    cursor: pointer;
+    color: darkorange;
+}
+#demo{
+    text-align: center;
+}

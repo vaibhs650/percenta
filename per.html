@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Generator</title>
+   <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+     <h2> Percentage Generator</h2>
+     <h3>Enter Your Marks Of Five Subjects</h3>
+     <p id="para1">
+         <input type="text" placeholder="Hindi" id="hin">
+         <input type="text" placeholder="Marathi" id="mar">
+         <input type="text" placeholder="English" id="eng">
+         <input type="text" placeholder="Maths" id="math">
+         <input type="text" placeholder="Programming" id="prog">
+     </p>
+    </div>
+    <button onclick="per()">Check Result</button>
+    <p id="demo"> </p>
+    <script>
+      function per() {
+         let hin = document.getElementById('hin').value;
+         let mar = document.getElementById('mar').value;
+         let eng = document.getElementById('eng').value;
+         let mat = document.getElementById('math').value;
+         let pro = document.getElementById('prog').value;
+
+         let total = parseFloat(hin) + parseFloat(mar) + parseFloat(eng) + parseFloat(mat) + parseFloat(pro);
+         let p = (total/500)*100;  
+         document.getElementById('demo').innerHTML = `You Got ${p} %`;
+      }
+     
+    </script>
+</body>
+</html>
